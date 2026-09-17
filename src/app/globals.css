@@ -5,7 +5,15 @@
   --foreground: #171717;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
+  --background-light: #e9fffa;
+  --text-light: #0c233e;
+  --secondary-light: #b9e9de;
+  --background-dark: #042b22;
+  --text-dark: #f8f3f3;
+  --secondary-dark: #09634e;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
