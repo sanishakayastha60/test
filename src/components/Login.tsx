@@ -9,6 +9,9 @@ export default function Login() {
     email: "",
     password: "",
   });
+  function handleChange() {
+    console.log("hanlde");
+  }
   return (
     <div className="">
       <div className="w-fit p-4 bg-white">
@@ -20,7 +23,7 @@ export default function Login() {
               type="email"
               placeholder="test@gmail.com"
               value={formData.email}
-              // onChange={e.}
+              onChange={handleChange}
               className="border rounded-lg p-2"
             />
           </div>
@@ -28,10 +31,10 @@ export default function Login() {
             <label htmlFor="">Password</label>
             <input
               type="password"
-              name=""
-              id=""
+              name="password"
               placeholder="abc@123"
               value={formData.password}
+              onChange={handleChange}
               className="border rounded-lg p-2"
             />
           </div>
